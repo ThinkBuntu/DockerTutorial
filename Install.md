@@ -6,7 +6,11 @@
 	•	Ubuntu Vivid 15.04
 	•	Ubuntu Trusty 14.04 (LTS)
 	•	Ubuntu Precise 12.04 (LTS)
-	•	Ubuntu Saucy 13.10
+	•	Ubuntu Saucy 13.10  
+	  
+	Tambahkan repository :  
+	`sudo sh -c "echo deb http://get.docker.io/ubuntu docker main /etc/apt/sources.list.d/docker.list"`
+
 	 
 2. Update repository server :  
 	` $ sudo apt-get update `  
@@ -32,5 +36,7 @@
 8. Verifikasi installasi docker  
 	` $ sudo docker run hello-world `  
 
-9. DONE
+9. Jika ingin GUI dari web browser untuk memanagement Container + Images bisa di install shipyard dengan perintah :  
+	`docker run --rm -v /var/run/docker.sock:/var/run/docker.sock shipyard/deploy start
+	`
 
